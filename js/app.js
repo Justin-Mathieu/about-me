@@ -4,6 +4,7 @@ let username = prompt('What is your name?');
 confirm('Hi ' + username + ' Answer some of these questions about me!');
 
 let dogname = prompt('Is my dog named Larry');
+dogname = dogname.toLocaleLowerCase();
 if (dogname === 'yes') {
   //   console.log('Incorrect!')
   alert('Incorrect!');
@@ -17,6 +18,7 @@ else {
 }
 
 let place = prompt('Do I live in vancouver, WA?');
+place = place.toLowerCase();
 if (place === 'yes') {
   //console.log('Correct)
   alert('Correct');
@@ -30,6 +32,7 @@ else {
 }
 
 let food = prompt('Is my favorite food pizza?');
+food = food.toLowerCase();
 if (food === 'yes') {
   //console.log('Incorrect!')
   alert('Incorrect!');
@@ -42,6 +45,7 @@ if (food === 'yes') {
 }
 
 let color = prompt('Is my favorite color red?');
+color = color.toLowerCase();
 if (color === 'yes') {
   //console.log('Correct!)
   alert('Correct!');
@@ -54,6 +58,7 @@ if (color === 'yes') {
 }
 
 let music = prompt('Is jazz my favorite genre of music?');
+music = music.toLowerCase();
 if (music === 'yes') {
   //console.log('Incorrect!')
   alert('Incorrect!');
@@ -67,18 +72,38 @@ if (music === 'yes') {
 //console.log('Thankyou!)
 alert('Thank you!' + username);
 
-let favcolor = ['red', 'green', 'blue'];
+//let favcolor = ['red', 'green', 'blue'];
+//favcolor = favcolor.toLowerCase();
 //let favcolor = "red";
-let maxAttempts = 7;
-let currentAttempt = 0;
-while (currentAttempt < maxAttempts) {
-  let response = prompt('guess a color');
-  //for (let i = 0; i < favcolor.length; i++) {
-  if (response === favcolor) {
-    alert('Correct!');
+// let maxAttempts = 7;
+// let currentAttempt = 0;
+// while (currentAttempt < maxAttempts) {
+//   let response = prompt('guess a color');
+//   //for (let i = 0; i < favcolor.length; i++) {
+//   if (response === favcolor) {
+//     alert('Correct!');
+//     break;
+//   }
+// //   alert(`Incorrect! ${maxAttempts - currentAttempt - 1} attempts remaning`);
+
+// //   currentAttempt++;
+let numattempt = 5;
+
+for (let i = 0; i < numattempt; i++) {
+  let guessNumber = prompt('guess a number');
+  if (guessNumber === 10) {
+    alert('Correct!!');
     break;
   }
-  alert(`Incorrect! ${maxAttempts - currentAttempt - 1} attempts remaning`);
 
-  currentAttempt++;
+  if (guessNumber < 9) {
+    alert(
+      `Too low!! try again! you have You have ${numattempt - [i]} attempts left`
+    );
+  }
+  if (guessNumber > 11) {
+    alert(
+      `Too high! try again! you have You have ${numattempt - [i]} attempts left`
+    );
+  }
 }

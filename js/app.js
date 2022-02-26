@@ -110,6 +110,7 @@ for (let i = 0; i < colorAttempt; i++) {
     alert(`Try again! you have ${colorAttempt - [i]} attempts left`);
   }
 }
+alert(`The possible answers were ${favColor}`);
 let numattempt = 5;
 
 for (let i = 0; i < numattempt; i++) {
@@ -130,9 +131,9 @@ for (let i = 0; i < numattempt; i++) {
     alert(
       `Too high! try again! you have You have ${numattempt - [i]} attempts left`
     );
-  }
-  if (numattempt === 0) {
+  } else {
     alert('The correct answer was 10');
   }
 }
+
 alert(`your score is ${score}`);

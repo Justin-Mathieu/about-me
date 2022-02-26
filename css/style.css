@@ -1,59 +1,78 @@
-body{background-color:rgb(128, 158, 119)
+body {
+  background-color: rgb(128, 158, 119);
+  box-sizing: border-box;
 }
 
-nav{background-color:grey;
-    text-align: left;
-    height:3rem;
-    margin-bottom:1rem;
-    border-style: groove;
-    border-color: white;
-    
+nav {
+  background-color: grey;
+  text-align: left;
+  height: 3rem;
+  margin-bottom: 1rem;
+  border-style: groove;
+  border-color: white;
 }
-nav ul li{ font-size: 1rem;
-   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-    display: inline;
-padding-left: 2rem;
-}
- 
-nav ul{
-    padding-top:1rem
+nav ul li {
+  font-size: 1rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: inline;
+  padding-left: 2rem;
 }
 
-h1{ height:5rem;
-    font-size: 4rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding-left: 1rem;
-    text-shadow: 5rem;
+nav ul {
+  padding-top: 1rem;
 }
-img{padding-bottom: 2rem;
-margin:1rem;
-border-radius: 2rem;
-border-width: .5rem;
-box-shadow: 5rem;
+
+h1 {
+  height: 5rem;
+  font-size: 4rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-left: 1rem;
+  text-shadow: 5rem;
+}
+img {
+  padding-bottom: 2rem;
+  margin: 1rem;
+  border-radius: 2rem;
+  border-width: 0.5rem;
+  box-shadow: 5rem;
+  -moz-box-align: center;
 }
 p {
-    color:black;
-    margin-left: 20rem;
-    margin-right: 20rem;
-    text-align: center;
-
-
-
+  color: black;
+  margin-left: 20rem;
+  margin-right: 20rem;
+  text-align: center;
 }
-p:first-of-type{
-    color:white;
-    padding-bottom: 5rem;
-    margin-left: 30rem;
-    text-align: right;
-    margin-right:5rem;
-    font-size: 2rem;
-    
-   
-
+p:first-of-type {
+  width: 10rem;
+  color: white;
+  padding-bottom: 5rem;
+  margin-left: 30rem;
+  text-align: center;
+  margin-right: 5rem;
+  font-size: 1rem;
 }
 
-footer{
-    text-align: center;
-    background-color: grey;
-    margin-top: 5rem;
+footer {
+  text-align: center;
+  background-color: grey;
+  margin-top: 5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  background-color: grey;
+  padding: 1rem;
+  border: 1px;
+  text-align: center;
+}
+div {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+}
+div ol {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
